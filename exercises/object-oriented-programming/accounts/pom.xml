@@ -12,6 +12,10 @@
   <version>1.0.0</version>
 
   <name>accounts</name>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 18bfddbac10d294600600882ccfb53c6573c84ea
   <build>
     <pluginManagement>
       <plugins>
@@ -20,9 +24,15 @@
           <artifactId>maven-compiler-plugin</artifactId>
           <configuration>
             <testExcludes>
+<<<<<<< HEAD
                <testExclude>**/BankTest.java</testExclude>
               <testExclude>**/CurrentAccountTest.java</testExclude>
               <testExclude>**/SavingsAccountTest.java</testExclude>
+=======
+              <!-- <testExclude>**/BankTest.java</testExclude> -->
+              <!-- <testExclude>**/CurrentAccountTest.java</testExclude> -->
+              <!-- <testExclude>**/SavingsAccountTest.java</testExclude> -->
+>>>>>>> 18bfddbac10d294600600882ccfb53c6573c84ea
             </testExcludes>
           </configuration>
         </plugin>

@@ -12,6 +12,10 @@
   <version>1.0.0</version>
 
   <name>shapes</name>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 18bfddbac10d294600600882ccfb53c6573c84ea
   <build>
     <pluginManagement>
       <plugins>
@@ -20,8 +24,12 @@
           <artifactId>maven-compiler-plugin</artifactId>
           <configuration>
             <testExcludes>
+<<<<<<< HEAD
               <!-- <testExclude>**/ShapeTest.java</testExclude> -->
               <testExclude>**/PaintTest.java</testExclude>
+=======
+              <!-- <testExclude>**/PaintTest.java</testExclude> -->
+>>>>>>> 18bfddbac10d294600600882ccfb53c6573c84ea
             </testExcludes>
           </configuration>
         </plugin>
