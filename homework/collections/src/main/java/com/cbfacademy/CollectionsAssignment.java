@@ -2,7 +2,10 @@ package com.cbfacademy;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.HashSet;
 import java.util.List;
+import java.util.ListIterator;
+import java.util.Set;
 
 public class CollectionsAssignment {
 
@@ -17,6 +20,13 @@ public class CollectionsAssignment {
     public static void removeSmallInts(List<Integer> list, int minValue) {
         // Your solution must traverse the list from last to first element
         // removing any values less than minValue.
+        ListIterator<Integer> iterator = list.listIterator(list.size());
+        while (iterator.hasPrevious()) {
+            Integer value = iterator.previous();
+            if (value < minValue) {
+                iterator.remove();
+            }
+        }
     }
 
     /**
@@ -28,7 +38,10 @@ public class CollectionsAssignment {
      */
     public static boolean containsDuplicates(Collection<Integer> integers) {
         // Your solution must not use any loops.
-        return false;
+        Set<Integer> set = new HashSet<>(integers);
+        return set.size() < integers.size();
+    }
+        //return false;
     }
 
     /**
